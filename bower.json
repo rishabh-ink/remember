@@ -1,0 +1,72 @@
+{
+  "name": "Remember",
+  "description": "An app to help you remember the stuff you did.",
+  "url": "http://rishabhsrao.github.io/remember/app",
+  "license": "./license.md",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true,
+  "author": {
+    "name": "Rishabh Rao",
+    "email": "rishabhsrao@gmail.com",
+    "url": "http://rishabhsrao.github.io"
+  },
+  "dependencies": {
+    "amplify": "https://github.com/appendto/amplify.git#1.1.2",
+    "bragi": "https://github.com/enoex/Bragi-Browser.git#0.0.7",
+    "jquery": "https://github.com/jquery/jquery.git#1.10.2",
+    "moment": "https://github.com/moment/moment.git#2.8.3",
+    "moment-precise-range": "https://github.com/AndrewEastwood/moment-precise-range.git#984e5e753762cbd8aba6bf4ba75bd43d79c02057",
+    "moment-range": "https://github.com/gf3/moment-range.git#1.0.5",
+    "polymer": "Polymer/polymer#0.5.2",
+    "requirejs": "https://github.com/jrburke/requirejs-bower.git#2.1.15",
+    "requirejs-text": "https://github.com/requirejs/text.git#2.0.12",
+    "rivets": "https://github.com/mikeric/rivets.git#0.7.1",
+    "underscore": "https://github.com/components/underscore.git#1.7.0",
+    "underscore.string": "https://github.com/epeli/underscore.string.git#2.3.3"
+  },
+  "devDependencies": {
+    "Retina-Sprites-for-Compass": "https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass.git",
+    "jasmine-ajax": "https://github.com/jasmine/jasmine-ajax.git#2.99.0",
+    "jasmine-jquery": "https://github.com/velesin/jasmine-jquery.git#2.0.4",
+    "normalize-css": "https://github.com/necolas/normalize.css.git#3.0.1"
+  },
+  "resolutions": {
+    "jquery": "1.10.2"
+  },
+  "ignore": [
+    ".bundle",
+    ".git",
+    ".sass-cache",
+    "bower_components",
+    "gulp",
+    "lib",
+    "node_modules",
+    "report",
+    "test",
+    "tools",
+    "**/.*",
+    "build.sh",
+    "config.rb",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "karma.conf.js",
+    "package.json",
+    "*.nuspec",
+    "*.sublime*"
+  ],
+  "main": [
+    "dist/**/*",
+    "bower.json",
+    "readme.md",
+    "license.md"
+  ],
+  "keywords": [
+    "remember",
+    "todo",
+    "recall"
+  ]
+}

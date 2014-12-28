@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "0.10"
+before_install:
+  - "npm install -g gulp"
+before_script:
+  - "bundle install"
+  - "bower install --config.interactive=false"
+  - "git config user.email 'travis@travis-ci.org'"
+  - "git config user.name 'travis-ci'"
+script:
+  - "gulp clean"
+  - "gulp build"
+after_success:
+  - "gulp js:test:report:coveralls"
+after_script:
+  -
+notifications:
+  email: false

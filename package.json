@@ -1,0 +1,71 @@
+{
+  "name": "Remember",
+  "description": "An app to help you remember the stuff you did.",
+  "url": "http://rishabhsrao.github.io/remember/app",
+  "license": "./license.md",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true,
+  "author": {
+    "name": "Rishabh Rao",
+    "email": "rishabhsrao@gmail.com",
+    "url": "http://rishabhsrao.github.io"
+  },
+  "engines": {
+    "node": ">=0.10.29",
+    "npm": ">=1.4.14"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "1.3.10",
+    "browser-sync": "1.3.5",
+    "del": "0.1.1",
+    "event-stream": "3.1.0",
+    "extend": "1.3.0",
+    "gulp": "3.8.10",
+    "gulp-assets": "0.2.2",
+    "gulp-cache": "0.2.0",
+    "gulp-compass": "1.1.9",
+    "gulp-csslint": "0.1.4",
+    "gulp-debug": "0.3.1",
+    "gulp-filter": "2.0.0",
+    "gulp-header": "1.2.2",
+    "gulp-if": "0.0.5",
+    "gulp-ignore": "1.0.0",
+    "gulp-imagemin": "1.2.1",
+    "gulp-jasmine": "1.0.1",
+    "gulp-jshint": "1.6.2",
+    "gulp-load-plugins": "0.5.3",
+    "gulp-minify-html": "0.1.8",
+    "gulp-notify": "1.8.0",
+    "gulp-prompt": "0.1.0",
+    "gulp-rename": "1.2.0",
+    "gulp-ruby-sass": "0.4.3",
+    "gulp-size": "0.4.1",
+    "gulp-strip-debug": "0.2.0",
+    "gulp-template": "0.1.2",
+    "gulp-uglify": "1.0.1",
+    "gulp-useref": "1.0.2",
+    "gulp-util": "2.2.20",
+    "jshint-stylish": "0.4.0",
+    "karma": "0.12.23",
+    "karma-chrome-launcher": "0.1.4",
+    "karma-coverage": "0.2.6",
+    "karma-jasmine": "0.2.2",
+    "karma-junit-reporter": "0.2.2",
+    "karma-phantomjs-launcher": "0.1.4",
+    "karma-requirejs": "0.2.2",
+    "karma-spec-reporter": "0.0.13",
+    "node-notifier": "3.4.1",
+    "require-dir": "0.1.0",
+    "requirejs": "2.1.15",
+    "yargs": "1.2.3"
+  },
+  "keywords": [
+    "remember",
+    "todo",
+    "recall"
+  ]
+}
