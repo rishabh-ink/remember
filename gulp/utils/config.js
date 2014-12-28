@@ -35,6 +35,10 @@ module.exports = {
       testMain: "main.js",
       karma: "karma.conf.js"
     },
+    coverageReporter: {
+      lcov: "lcov.info",
+      junit: "junit.xml"
+    },
     extension: {
       style: {
         scss: "scss",

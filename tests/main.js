@@ -27,7 +27,9 @@ require.config({
     "sightglass": "bower_components/sightglass/index",
     "rivets": "bower_components/rivets/dist/rivets",
     "underscore.string": "bower_components/underscore.string/lib/underscore.string",
-    "jasmine-ajax": "bower_components/jasmine-ajax/lib/mock-ajax"
+    "jasmine-ajax": "bower_components/jasmine-ajax/lib/mock-ajax",
+
+    "main": "app/scripts/main"
   },
 
   shim: {

@@ -1,13 +1,12 @@
 language: node_js
 node_js:
-  - "0.10"
+  - "0.10.29"
 before_install:
-  - "npm install -g gulp"
+  - "npm install -g gulp bower"
 before_script:
+  - "npm install"
   - "bundle install"
-  - "bower install --config.interactive=false"
-  - "git config user.email 'travis@travis-ci.org'"
-  - "git config user.name 'travis-ci'"
+  - "bower install"
 script:
   - "gulp clean"
   - "gulp build"

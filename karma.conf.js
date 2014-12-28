@@ -36,7 +36,6 @@ module.exports = function(config) {
       { pattern: path.join(CFG.DIR.test, CFG.FILE.config.testMain) },
 
       // Test fixtures
-      // TODO Configure path to use test/fixture/component
       { pattern: path.join(CFG.DIR.test, "**", "*"), included: false }
     ],
 
@@ -65,22 +64,13 @@ module.exports = function(config) {
 
     coverageReporter: {
       reporters: [{
-        type: "html",
-        dir: path.join(CFG.DIR.report, CFG.DIR.test),
-        file: "coverage-report-html.html"
-      }, {
-        type: "teamcity",
-        dir: path.join(CFG.DIR.report, CFG.DIR.test),
-        file: "coverage-report-teamcity"
-      }, {
-        type: "text",
-        dir: path.join(CFG.DIR.report, CFG.DIR.test),
-        file: "coverage-report-text.txt"
+        type: "lcov",
+        dir: path.join(CFG.DIR.report, CFG.DIR.test)
       }]
     },
 
     junitReporter: {
-      outputFile: path.join(CFG.DIR.report, CFG.DIR.test, "coverage-report-junit.xml"),
+      outputFile: path.join(CFG.DIR.report, CFG.DIR.test, CFG.FILE.coverageReporter.junit),
       suite: ""
     },
 
@@ -91,7 +81,7 @@ module.exports = function(config) {
     },
 
     preprocessors: {
-      "app/script/*.js": [
+      "app/scripts/*.js": [
         "coverage"
       ]
     }
