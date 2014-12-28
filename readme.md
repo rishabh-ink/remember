@@ -25,10 +25,7 @@ bundle install && npm install && bower install && gulp build
 say awesome # Only on Mac OS X; use espeak on GNU/Linux. Windows users, sorry, no awesomeness for you!
 ```
 
-
-### Downloading dependencies behind a firewall
-
-Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
+:warning: Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
 
 ```
 git config url.https://.insteadOf git://
