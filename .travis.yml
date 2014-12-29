@@ -13,7 +13,7 @@ notifications:
   email: false
 deploy:
   provider: heroku
-  app: thawing-retreat-8445
+  app: remember-rishabhsrao
   skip_cleanup: true
   on:
     all_branches: true
