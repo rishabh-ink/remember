@@ -1,4 +1,5 @@
 # Remember
+dist
 report
 
 # Sass (sass-lang.com)
@@ -18,6 +19,9 @@ Thumbs.db
 
 # Ruby (www.ruby-lang.org)
 .bundle
+
+# Bower (bower.io)
+bower_components
 
 # Istanbul (github.com/gotwarlost/istanbul)
 coverage
