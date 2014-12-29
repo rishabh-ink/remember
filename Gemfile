@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3-p551'
+ruby '2.2.0'
 
 # Compass (rubygems.org/gems/compass)
 gem 'compass', '~> 1.0.1'
