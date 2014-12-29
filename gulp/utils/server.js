@@ -1,8 +1,9 @@
 "use strict";
 
-var statik = require("statik");
-var server = statik.createServer({
-    port: process.env.PORT || 3000,
-    root: "."
-});
-server.listen();
+var express = require("express");
+var path = require("path");
+var CFG = require("./config");
+
+var app = express();
+app.use(express.static("."));
+app.listen(process.env.PORT || 3000);
