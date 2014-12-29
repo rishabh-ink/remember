@@ -12,3 +12,11 @@ after_success:
   - "./node_modules/.bin/gulp script:test:report"
 notifications:
   email: false
+deploy:
+  provider: heroku
+  app: thawing-retreat-8445
+  skip_cleanup: true
+  on:
+    all_branches: true
+  api_key:
+    secure: ITyrmpzQTTkWPFgUWRL+yiYm72+68qlMECtW2XQlmaGxpg+EfK841dSiYvoxwAigup7xDftWn1r6oR2L9Wb+2bpTYmhYpnZ0NAzIQDHMk3sbvHYrWXWJg6PC6wfNEwZuVNuJ8Y4mNbr6UAp1KnyGf8FcRxWUST7rvMzqnqPglgM=
