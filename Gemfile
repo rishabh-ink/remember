@@ -11,3 +11,6 @@ gem 'sass-css-importer', '~> 1.0.0.beta.0'
 
 # Causes SCSS Lint (rubygems.org/gems/scss-lint)
 gem 'scss-lint', '~> 0.25.1'
+
+# (Travis) rubygems.org/gems/travis
+gem 'travis', '~> 1.7.4'
