@@ -14,8 +14,8 @@
     "url": "http://rishabhsrao.github.io"
   },
   "engines": {
-    "node": ">=0.10.29",
-    "npm": ">=1.4.14"
+    "node": "0.10.29",
+    "npm": "1.4.14"
   },
   "dependencies": {},
   "devDependencies": {
@@ -62,7 +62,7 @@
     "node-notifier": "3.4.1",
     "require-dir": "0.1.0",
     "requirejs": "2.1.15",
-    "statik": "^1.4.6",
+    "statik": "1.4.6",
     "yargs": "1.2.3"
   },
   "keywords": [
