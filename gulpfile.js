@@ -15,7 +15,7 @@ require("require-dir")("gulp");
  * Runs style-related, script-related and image-related tasks to create a
  * distribution directory at `/dist`.
  */
-gulp.task("build", ["style:compile", "markup:minify", "script:minify", "image:minify", "source"], function(callback) {
+gulp.task("build", ["markup:minify", "script:minify", "image:minify", "source"], function(callback) {
   notify.showNotification({
     subtitle: "Task build",
     message: "Build complete! See ./dist for artifacts."

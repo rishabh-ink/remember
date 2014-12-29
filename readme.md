@@ -9,8 +9,6 @@
 **Remember** depends on the following tools:
 
 * [Node.js](http://nodejs.org)
-* [Ruby](https://www.ruby-lang.org)
-* [Bundler](http://bundler.io) gem
 * [Bower](http://bower.io)
 * [Gulp](http://gulpjs.com)
 
@@ -21,7 +19,7 @@ Once they are installed, run...
 ```
 git clone git@github.com:rishabhsrao/remember.git
 cd remember
-bundle install && npm install && bower install && gulp build
+npm install && bower install && gulp build
 say awesome # Only on Mac OS X; use espeak on GNU/Linux. Windows users, sorry, no awesomeness for you!
 ```
 
@@ -44,8 +42,6 @@ git config url.https://.insteadOf git://
 The following build tasks are available:
 
 * **clean**: Deletes everything in the `dist` directory.
-* **style:compile**: Compiles the Sass files.
-* **style:lint**: Lints the Sass files.
 * **script:lint**: Lints the JavaScript files. Uses `.jshintrc` for configuration.
 * **script:test** (depends on **script:lint**): Runs the unit tests.
 * **script:test:report:coveralls**: Sends test coverage data to *Coveralls.io*. Uses [Istanbul](http://gotwarlost.github.io/istanbul).

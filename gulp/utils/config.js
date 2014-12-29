@@ -26,11 +26,8 @@ module.exports = {
 
   FILE: {
     config: {
-      style: "_config.scss",
       pkg: "package.json",
-      styleLint: ".scsslintrc",
       scriptLint: ".jshintrc",
-      compass: "config.rb",
       bower: "bower.json",
       testMain: "main.js",
       karma: "karma.conf.js"
@@ -41,8 +38,6 @@ module.exports = {
     },
     extension: {
       style: {
-        scss: "scss",
-        sass: "sass",
         css: "css"
       },
       script: {
