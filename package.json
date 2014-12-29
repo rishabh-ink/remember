@@ -67,6 +67,8 @@
   },
   "scripts": {
     "start": "node ./gulp/utils/server.js",
+    "test": "gulp script:test",
+    "postinstall": "./node_modules/.bin/bower install && gulp build"
   },
   "keywords": [
     "remember",
