@@ -65,6 +65,9 @@
     "statik": "1.4.6",
     "yargs": "1.2.3"
   },
+  "scripts": {
+    "start": "node ./gulp/utils/server.js",
+  },
   "keywords": [
     "remember",
     "todo",
