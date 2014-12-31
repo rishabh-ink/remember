@@ -6,24 +6,21 @@
 
 ## :rowboat: Getting started
 
-**Remember** depends on the following tools:
+This is a NodeJS-based project. Ensure that you have NodeJS v0.10.29+.
 
-* [Node.js](http://nodejs.org)
-* [Bower](http://bower.io)
-* [Gulp](http://gulpjs.com)
-
-:point_up: You can use [nvm](https://github.com/creationix/nvm), [rvm](https://rvm.io) and [Homebrew](http://brew.sh)/[Chocolatey](https://chocolatey.org) to manage their installations.
-
-Once they are installed, run...
+:point_up: **Protip** Use [nvm](https://github.com/creationix/nvm) for easy management of NodeJS installations.
 
 ```
 git clone git@github.com:rishabhsrao/remember.git
 cd remember
-npm install && bower install && gulp build
-say awesome # Only on Mac OS X; use espeak on GNU/Linux. Windows users, sorry, no awesomeness for you!
+npm install
+./node_modules/.bin/bower install
+./node_modules/.bin/gulp serve && say awesome # Only on Mac OSX; use espeak on GNU/Linux. Windows users, sorry, no awesomeness for you!
 ```
 
-:warning: Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
+:warning: **Firewall issues**
+
+Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
 
 ```
 git config url.https://.insteadOf git://
@@ -34,7 +31,7 @@ git config url.https://.insteadOf git://
 ### :high_brightness: Updating the code
 
 * Use `git pull --rebase` to update your code.
-* Run `bundle install && npm install && bower install` afterwards to account for any newly added/updated/removed packages.
+* Run `bundle install && npm install && bower install` to account for any newly added/updated/removed packages.
 
 
 ### :pencil2: Build tasks
@@ -50,13 +47,17 @@ The following build tasks are available:
 * **build**: Creates a distributable version of the app in the `dist` directory.
 
 
-### :rocket: Distributing
+# Contributing
 
-* Use `gulp build` to create a distributable version of the app in the `dist` directory.
+1. Fork and clone this repo
+2. Create your feature branch: `git checkout -b my-awesome-feature`
+3. Commit your changes: `git commit -m "Add awesome feature"`
+4. Push to the branch: `git push origin my-awesome-feature`
+5. Submit a pull request
 
 
 ### :scroll: License
 
-**Remember** is licensed under the [MIT license](license.md).
+[MIT license](license.md) &copy; [Rishabh Rao](http://rishabhsrao.github.io).
 
 ---
