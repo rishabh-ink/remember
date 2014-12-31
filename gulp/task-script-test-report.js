@@ -8,8 +8,8 @@ var path = require("path");
  * @see www.npmjs.org/package/gulp-coveralls
  */
 gulp.task("script:test:report", ["script:test"], function () {
-  gulp.src([
-      path.join(CFG.DIR.report, CFG.DIR.test, CFG.FILE.coverageReporter.lcov)
+  return gulp.src([
+      path.join(CFG.DIR.report, CFG.DIR.test, "**", CFG.FILE.coverageReporter.lcov)
     ])
     .pipe($.coveralls());
 });
