@@ -39,6 +39,7 @@ git config url.https://.insteadOf git://
 The following build tasks are available:
 
 * **clean**: Deletes everything in the `dist` directory.
+* **style:compile**: Compiles the Sass files.
 * **script:lint**: Lints the JavaScript files. Uses `.jshintrc` for configuration.
 * **script:test** (depends on **script:lint**): Runs the unit tests.
 * **script:test:report:coveralls**: Sends test coverage data to *Coveralls.io*. Uses [Istanbul](http://gotwarlost.github.io/istanbul).

@@ -38,6 +38,7 @@ module.exports = {
     },
     extension: {
       style: {
+        scss: "scss",
         css: "css"
       },
       script: {

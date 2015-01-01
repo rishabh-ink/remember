@@ -21,6 +21,12 @@ gulp.task("serve", ["build"], function () {
   });
 
   gulp.watch([
+        path.join(CFG.DIR.src, "/**/*." + CFG.FILE.extension.style.scss)
+  ], [
+    "style:compile"
+  ]);
+
+  gulp.watch([
     path.join(CFG.DIR.src, "/**/*." + CFG.FILE.extension.markup.html)
   ], [
     "markup:minify"

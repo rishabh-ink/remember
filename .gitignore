@@ -2,6 +2,9 @@
 dist
 report
 
+# Sass (sass-lang.com)
+*.sass-cache
+
 # Node (nodejs.org)
 node_modules
 npm-debug.log
