@@ -69,9 +69,7 @@
     "yargs": "1.2.3"
   },
   "scripts": {
-    "start": "node ./gulp/utils/server.js",
-    "test": "gulp script:test",
-    "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/gulp build"
+    "start": "node ./gulp/utils/server.js"
   },
   "keywords": [
     "remember",
