@@ -52,13 +52,22 @@ The following build tasks are available:
 * **build**: Creates a distributable version of the app in the `dist` directory.
 
 
-# Contributing
+# :deciduous_tree: Contributing
 
 1. Fork and clone this repo
 2. Create your feature branch: `git checkout -b my-awesome-feature`
 3. Commit your changes: `git commit -m "Add awesome feature"`
 4. Push to the branch: `git push origin my-awesome-feature`
 5. Submit a pull request
+
+
+# :rocket: Deploying
+
+This project is deployed to [Heroku](http://remember-rishabhsrao.herokuapp.com) using a [NodeJS](https://github.com/heroku/heroku-buildpack-nodejs) [buildpack](https://devcenter.heroku.com/articles/buildpacks). This is configured using the [Heroku toolbelt](https://toolbelt.heroku.com):
+
+```
+heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
+```
 
 
 ### :scroll: License
