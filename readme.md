@@ -63,11 +63,16 @@ The following build tasks are available:
 
 # :rocket: Deploying
 
-This project is deployed to [Heroku](http://remember-rishabhsrao.herokuapp.com) using a [NodeJS](https://github.com/heroku/heroku-buildpack-nodejs) [buildpack](https://devcenter.heroku.com/articles/buildpacks). This is configured using the [Heroku toolbelt](https://toolbelt.heroku.com):
+This project is deployed to [Heroku](http://remember-rishabhsrao.herokuapp.com) using a [NodeJS](https://github.com/heroku/heroku-buildpack-nodejs) [buildpack](https://devcenter.heroku.com/articles/buildpacks). This was configured using the [Heroku toolbelt](https://toolbelt.heroku.com):
 
 ```
+heroku create remember-rishabhsrao
+git push heroku master
+heroku ps:scale web=1
 heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
 ```
+
+Continuous deployment is done via [TravisCI](https://travis-ci.org/rishabhsrao/remember).
 
 
 ### :scroll: License
