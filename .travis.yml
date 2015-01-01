@@ -10,6 +10,8 @@ after_success:
   - "./node_modules/.bin/gulp script:test:report"
 notifications:
   email: false
+before_deploy:
+  - "./node_modules/.bin/gulp source:clean"
 deploy:
   provider: heroku
   app: remember-rishabhsrao
