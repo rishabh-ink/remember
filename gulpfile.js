@@ -17,8 +17,8 @@ require("require-dir")("gulp");
  */
 gulp.task("build", ["markup:minify", "script:minify", "image:minify", "source"], function(callback) {
   notify.showNotification({
-    subtitle: "Task build",
-    message: "Build complete! See ./dist for artifacts."
+    subtitle: "Task: build",
+    message: "Build complete! `dist` has the distributable."
   });
 
   callback();
@@ -34,5 +34,5 @@ gulp.task("default", function () {
   Object.keys(gulp.tasks).forEach(function (taskName) {
     $.util.log("\t", $.util.colors.yellow(taskName));
   });
-  $.util.log("Use", $.util.colors.green("gulp build"), "to get started.");
+  $.util.log("Use", $.util.colors.green("gulp serve"), "to get started.");
 });

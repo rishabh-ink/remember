@@ -1,15 +1,18 @@
 var notifier = new require("node-notifier")({});
 var extend   = require("extend");
+var path     = require("path");
+var CFG      = require("./config.js");
+var pkg      = require(path.join("..", "..", CFG.FILE.config.pkg));
 
 module.exports = {
   defaults: {
-    title: "UI Elements"
+    title: pkg.name
   },
 
   showNotification: function (options) {
     extend(options, this.defaults);
 
-    if("undefined" !== typeof(process.env.UI_ELEMENTS_CI)) {
+    if("undefined" !== typeof(process.env.REMEMBER_CI)) {
       // Running inside a CI environment, do not show notifications
       console.log("[notification]", options.message);
     } else {
