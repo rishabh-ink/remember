@@ -27,7 +27,9 @@ module.exports = {
   FILE: {
     config: {
       pkg: "package.json",
+      styleLint: ".scsslintrc",
       scriptLint: ".jshintrc",
+      compass: "config.rb",
       bower: "bower.json",
       testMain: "main.js",
       karma: "karma.conf.js"

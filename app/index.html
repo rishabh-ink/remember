@@ -1,5 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="">
+<!--
+    .-.
+  _( " )_  Made with <3 in
+ (_  :  _) Bangalore during
+   / ' \   Christmas of '14!
+  (_/^\_)
+
+  Copyright (c) 2014 Rishabh Rao.
+  https://github.com/rishabhsrao/remember/blob/master/license.md
+-->
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Remember</title>
@@ -15,8 +25,15 @@
   <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
   <!-- endbuild -->
 
+  <link rel="import" href="../bower_components/font-roboto/roboto.html" />
+
+  <link rel="import" href="../bower_components/core-icon/core-icon.html" />
+  <link rel="import" href="../bower_components/core-icons/core-icons.html" />
+  <link rel="import" href="../bower_components/core-menu/core-menu.html" />
+  <link rel="import" href="../bower_components/paper-item/paper-item.html" />
   <link rel="import" href="../bower_components/core-scaffold/core-scaffold.html" />
   <link rel="import" href="../bower_components/paper-button/paper-button.html" />
+  <link rel="import" href="../bower_components/paper-fab/paper-fab.html">
 </head>
 <body>
   <!--[if lt IE 10]>
@@ -26,13 +43,21 @@
   <core-scaffold>
     <core-header-panel navigation flex mode="seamed">
       <core-toolbar>Remember</core-toolbar>
-      <core-menu theme="core-light-theme">
-        <core-item icon="settings" label="item1"></core-item>
-        <core-item icon="settings" label="item2"></core-item>
+      <core-menu>
+        <paper-item label="Android">
+          <core-icon icon="android"></core-icon>
+          Android
+        </paper-item>
+
+        <paper-item label="Android">
+          <core-icon icon="favorite"></core-icon> Favorite
+        </paper-item>
+
       </core-menu>
     </core-header-panel>
     <div tool>Remember</div>
     <div>Hello world!</div>
+    <paper-fab icon="add"></paper-fab>
   </core-scaffold>
 
   <script src="../bower_components/requirejs/require.js" data-main="scripts/main.js"></script>

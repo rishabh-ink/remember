@@ -6,9 +6,15 @@
 
 ## :rowboat: Getting started
 
-This is a NodeJS-based project. Ensure that you have NodeJS v0.10.29+.
+This project depends on the following tools:
 
-:point_up: **Protip** Use [nvm](https://github.com/creationix/nvm) for easy management of NodeJS installations.
+* [Node.js](http://nodejs.org)
+* [Ruby](https://www.ruby-lang.org)
+* [Bundler](http://bundler.io) gem
+* [Bower](http://bower.io)
+* [Gulp](http://gulpjs.com)
+
+:point_up: **Protip** Use [nvm](https://github.com/creationix/nvm) and [rvm](http://rvm.io) for easy management of NodeJS and Ruby installations.
 
 ```
 git clone git@github.com:rishabhsrao/remember.git

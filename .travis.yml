@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - "0.10.29"
 before_script:
+  - "bundle install"
   - "npm install"
   - "./node_modules/.bin/bower install"
 script:
@@ -11,7 +12,7 @@ after_success:
 notifications:
   email: false
 before_deploy:
-  - "./node_modules/.bin/gulp source:clean"
+  - "./node_modules/.bin/gulp clean:deploy"
 deploy:
   provider: heroku
   app: remember-rishabhsrao

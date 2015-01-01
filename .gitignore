@@ -16,6 +16,9 @@ Thumbs.db
 # Sublime Text (sublimetext.org)
 *.sublime*
 
+# Bundler (bundler.io)
+.bundle
+
 # Bower (bower.io)
 bower_components
 
