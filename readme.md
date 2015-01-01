@@ -2,7 +2,7 @@
 
 > An app to help you remember the stuff you did.
 
-[![Build Status](https://travis-ci.org/rishabhsrao/remember.svg "Build status")](https://travis-ci.org/rishabhsrao/remember) [![Dependency status (npm)](https://david-dm.org/rishabhsrao/remember.svg "Dependency status (npm)")](https://david-dm.org/rishabhsrao/remember) [![Code Climate](http://img.shields.io/codeclimate/github/rishabhsrao/remember.svg "Code Climate")](https://codeclimate.com/github/rishabhsrao/remember) [![Coverage status](https://img.shields.io/coveralls/rishabhsrao/remember.svg "Coverage status")](https://coveralls.io/r/rishabhsrao/remember) [![License](http://img.shields.io/badge/license-MIT-blue.svg "License")](license.md)
+[![Build Status](https://travis-ci.org/rishabhsrao/remember.svg "Build status")](https://travis-ci.org/rishabhsrao/remember) [![Dependency status (npm)](https://david-dm.org/rishabhsrao/remember.svg "Dependency status (npm)")](https://david-dm.org/rishabhsrao/remember) [![Dependency status - bundler](https://gemnasium.com/rishabhsrao/remember.png "Dependency status (bundler)")](https://gemnasium.com/rishabhsrao/remember) [![Code Climate](http://img.shields.io/codeclimate/github/rishabhsrao/remember.svg "Code Climate")](https://codeclimate.com/github/rishabhsrao/remember) [![Coverage status](https://img.shields.io/coveralls/rishabhsrao/remember.svg "Coverage status")](https://coveralls.io/r/rishabhsrao/remember) [![License](http://img.shields.io/badge/license-MIT-blue.svg "License")](license.md)
 
 ## :rowboat: Getting started
 
