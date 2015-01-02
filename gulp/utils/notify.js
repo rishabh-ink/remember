@@ -1,4 +1,4 @@
-var notifier = new require("node-notifier")({});
+var notifier = new require("node-notifier");
 var extend   = require("extend");
 var path     = require("path");
 var CFG      = require("./config.js");
