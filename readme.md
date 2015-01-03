@@ -43,14 +43,18 @@ git config url.https://.insteadOf git://
 
 The following build tasks are available:
 
-* **clean** Deletes everything in the `dist` directory.
-* **style:compile** Compiles the Sass files.
-* **script:lint** Lints the JavaScript files. Uses `.jshintrc` for configuration.
-* **script:test** Runs the unit tests.
-* **script:test:report:coveralls** Sends test coverage data to *Coveralls.io*. Uses [Istanbul](http://gotwarlost.github.io/istanbul).
-* **script:minify** Minifies the JavaScript files.
-* **serve** Runs a BrowerSync session for live-reload-enabled development.
-* **build** Creates a distributable version of the app in the `dist` directory.
+* **style:lint** Lints the Sass files using [SCSS-Lint](https://github.com/causes/scss-lint).
+* **style:compile** Compiles the Sass files using [Compass](http://compass-style.org).
+* **script:lint** Lints the JavaScript files [JSHint](https://github.com/jshint/jshint).
+* **script:test** Runs the JavaScript unit tests using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
+* **script:minify** Minifies the JavaScript files using [UglifyJS](http://github.com/mishoo/UglifyJS).
+* **image:minify** Compresses the image files using [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).
+* **markup:build** Optimizes JavaScript and CSS references in the HTML using [Useref](www.npmjs.org/package/useref-file).
+* **markup:minify** Optimizes HTML imports and minifies the HTML using [Vulcanize](https://github.com/polymer/vulcanize).
+* **serve** Starts a web server with live-reload support using [BrowserSync](http://www.browsersync.io).
+* **build** Creates a build artifact, ready for deployment.
+* **source** Includes the source files in the build artifact.
+* **clean** Cleans all the build artifacts.
 
 
 ## :deciduous_tree: Contribute

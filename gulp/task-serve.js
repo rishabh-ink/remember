@@ -14,7 +14,7 @@ gulp.task("serve", ["build"], function () {
   browserSync({
     notify: true,
     injectChanges: true,
-    startPath: path.join(CFG.DIR.dist), // Hack path.join() to build a URL string.
+    startPath: path.join(CFG.DIR.src), // Hack path.join() to build a URL string.
     server: {
       baseDir: [path.join(__dirname, "..")] // `__dirname` is the current `gulp` directory so `..` is the project root directory.
     }

@@ -6,7 +6,7 @@ var pkg  = require(path.join("..", CFG.FILE.config.pkg));
 
 /**
  * markup:build
- * @see www.npmjs.org/package/useref
+ * @see www.npmjs.org/package/useref-file
  */
 gulp.task("markup:build", [], function () {
   var assets = $.useref.assets({
