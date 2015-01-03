@@ -14,6 +14,7 @@ module.exports = {
     gulp: "gulp",
     asset: "assets",
     util: "utils",
+    git: ".git",
 
     report: "report",
     coverage: "coverage",

@@ -7,6 +7,8 @@ var del  = require("del");
  * @see www.npmjs.org/package/del
  */
 gulp.task("clean:deploy", del.bind(null, [
-    CFG.DIR.npm
+    CFG.DIR.npm,
+    CFG.DIR.git,
+    CFG.DIR.test
   ])
 );
