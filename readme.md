@@ -1,4 +1,4 @@
-# Remember [:dizzy:](http://remember-rishabhsrao.herokuapp.com)
+# Remember [:dizzy:](http://remember-rishabhsrao.herokuapp.com/dist)
 
 > An app to help you remember the stuff you did.
 
@@ -86,7 +86,7 @@ Your pull-requests and [suggestions](https://github.com/rishabhsrao/remember/iss
 
 ## :rocket: Deploy
 
-This project is continuously deployed to [Heroku](http://remember-rishabhsrao.herokuapp.com) using a [NodeJS](https://github.com/heroku/heroku-buildpack-nodejs) [buildpack](https://devcenter.heroku.com/articles/buildpacks) by [Travis](https://travis-ci.org/rishabhsrao/remember), whenever a new tag is pushed. This was configured using the [Heroku toolbelt](https://toolbelt.heroku.com):
+This project is continuously deployed to [Heroku](http://remember-rishabhsrao.herokuapp.com/dist) using a [NodeJS](https://github.com/heroku/heroku-buildpack-nodejs) [buildpack](https://devcenter.heroku.com/articles/buildpacks) by [Travis](https://travis-ci.org/rishabhsrao/remember), whenever a new tag is pushed. This was configured using the [Heroku toolbelt](https://toolbelt.heroku.com):
 
 ```
 heroku create remember-rishabhsrao
@@ -94,6 +94,8 @@ git push heroku master
 heroku ps:scale web=1
 heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
 ```
+
+:tophat: **Tip** The non-minified version of this project is also deployed at [/app](http://remember-rishabhsrao.herokuapp.com/app).
 
 
 ## :scroll: License
