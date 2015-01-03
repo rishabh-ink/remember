@@ -8,16 +8,12 @@ var pkg  = require(path.join("..", CFG.FILE.config.pkg));
  * markup:build
  * @see www.npmjs.org/package/useref-file
  */
-gulp.task("markup:build", [], function () {
+gulp.task("markup:build", ["style:compile"], function () {
   var assets = $.useref.assets({
     searchPath: [
       CFG.DIR.src
     ]
   });
-
-  var markupFilter = $.filter([
-    "*." + CFG.FILE.extension.markup.html
-  ]);
 
   return gulp.src([
       path.join(CFG.DIR.src, "*." + CFG.FILE.extension.markup.html)
@@ -25,5 +21,8 @@ gulp.task("markup:build", [], function () {
     .pipe(assets)
     .pipe(assets.restore())
     .pipe($.useref())
+    .pipe($.revReplace({
+      manifest: gulp.src(path.join(CFG.DIR.report, CFG.DIR.revManifest, CFG.DIR.style, CFG.FILE.config.revManifest))
+    }))
     .pipe(gulp.dest(CFG.DIR.dist));
 });

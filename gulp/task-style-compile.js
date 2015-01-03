@@ -31,5 +31,8 @@ gulp.task("style:compile", ["style:lint"], function() {
         notify(error);
       }
     })
-    .pipe(gulp.dest(CFG.DIR.dist));
+    .pipe($.rev())
+    .pipe(gulp.dest(CFG.DIR.dist))
+    .pipe($.rev.manifest())
+    .pipe(gulp.dest(path.join(CFG.DIR.report, CFG.DIR.revManifest, CFG.DIR.style)));
 });

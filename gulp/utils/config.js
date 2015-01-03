@@ -15,6 +15,7 @@ module.exports = {
     asset: "assets",
     util: "utils",
     git: ".git",
+    revManifest: "rev-manifest",
 
     report: "report",
     coverage: "coverage",
@@ -33,7 +34,8 @@ module.exports = {
       compass: "config.rb",
       bower: "bower.json",
       testMain: "main.js",
-      karma: "karma.conf.js"
+      karma: "karma.conf.js",
+      revManifest: "rev-manifest.json"
     },
     coverageReporter: {
       lcov: "lcov.info",
