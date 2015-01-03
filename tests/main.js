@@ -29,7 +29,12 @@ require.config({
     "underscore.string": "bower_components/underscore.string/lib/underscore.string",
     "jasmine-ajax": "bower_components/jasmine-ajax/lib/mock-ajax",
 
-    "main": "app/scripts/main"
+    // Application scripts
+    "app": "app/scripts/app",
+    "main": "app/scripts/main",
+
+    // Test fixtures
+    "app-fixture": "tests/fixtures/app-fixture"
   },
 
   shim: {

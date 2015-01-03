@@ -29,14 +29,14 @@ module.exports = function(config) {
       { pattern: path.join(CFG.DIR.bower, "underscore.string", "lib", "underscore.string.js"), included: false },
       { pattern: path.join(CFG.DIR.bower, "jasmine-ajax", "lib", "mock-ajax.js"), included: false },
 
-      // Scripts
+      // Application scripts
       { pattern: path.join(CFG.DIR.src, CFG.DIR.script, "**", "*.js"), included: false },
 
       // RequireJS config for loading sources and tests
       { pattern: path.join(CFG.DIR.test, CFG.FILE.config.testMain) },
 
-      // Test fixtures
-      { pattern: path.join(CFG.DIR.test, "**", "*"), included: false }
+      // Test scripts and fixtures
+      { pattern: path.join(CFG.DIR.test, "**", "*.js"), included: false }
     ],
 
     exclude: [

@@ -18,7 +18,9 @@
       "text": "bower_components/requirejs-text/text",
       "sightglass": "bower_components/sightglass/index",
       "rivets": "bower_components/rivets/dist/rivets",
-      "underscore.string": "bower_components/underscore.string/lib/underscore.string"
+      "underscore.string": "bower_components/underscore.string/lib/underscore.string",
+
+      "app": "app/scripts/app"
     },
 
     shim: {
@@ -42,7 +44,8 @@
     }
   });
 
-  require(["jquery"], function (jQuery) {
-    console.log("Hello!!");
+  require(["app"],
+  function (App) {
+    console.log(App.hello());
   });
 })(window);
