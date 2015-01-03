@@ -9,6 +9,8 @@ cache:
   - bower_components
 before_script:
   - bundle install
+  - bundle show compass
+  - echo $BUNDLE_PATH
   - ./node_modules/.bin/bower install
 script:
   - ./node_modules/.bin/gulp build
