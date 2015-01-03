@@ -17,6 +17,6 @@ gulp.task("script:test:unit", ["script:lint"], function (callback) {
     singleRun: true
   }, function(exitCode) {
     notify(exitCode);
-    callback();
+    callback(exitCode);
   });
 });
