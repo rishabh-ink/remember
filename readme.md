@@ -92,7 +92,7 @@ This project is continuously deployed to [Heroku](http://remember-rishabhsrao.he
 heroku create remember-rishabhsrao
 git push heroku master
 heroku ps:scale web=1
-heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
+heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs#v63
 ```
 
 :tophat: **Tip** The non-minified version of this project is also deployed to [Heroku at /app](http://remember-rishabhsrao.herokuapp.com/app).
