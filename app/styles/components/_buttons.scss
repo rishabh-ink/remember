@@ -1,0 +1,10 @@
+.button--primary {
+  bottom: $buttons__margin--bottom--snuggle;
+  position: fixed;
+  right: $buttons__margin--right--snuggle;
+
+  @include breakpoint($breakpoint__compact) {
+    bottom: $buttons__margin--bottom--compact;
+    right: $buttons__margin--right--compact;
+  }
+}

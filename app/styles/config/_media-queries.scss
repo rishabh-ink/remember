@@ -1,0 +1,26 @@
+// Extra Small screens
+$screen__snuggle:  480px !default;
+$screen__snuggle--min: $screen__snuggle !default;
+
+// Small screens
+$screen__compact:  768px !default;
+$screen__compact--min: $screen__compact !default;
+
+// Medium screens
+$screen__cozy:  992px !default;
+$screen__cozy--min: $screen__cozy !default;
+
+// Large screens
+$screen__comfy:  1200px !default;
+$screen__comfy--min: $screen__comfy !default;
+
+// Max widths
+$screen__snuggle--max: ($screen__compact--min - 1) !default;
+$screen__compact--max: ($screen__cozy--min - 1) !default;
+$screen__cozy--max: ($screen__comfy--min - 1) !default;
+
+// Breakpoints
+$breakpoint__snuggle: (max-width $screen__snuggle--max) !default;
+$breakpoint__compact: (min-width $screen__compact--min) !default;
+$breakpoint__cozy: (min-width $screen__cozy--min) !default;
+$breakpoint__comfy: (min-width $screen__comfy--min) !default;
