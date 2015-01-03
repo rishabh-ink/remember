@@ -5,10 +5,10 @@ var path = require("path");
 var pkg  = require(path.join("..", CFG.FILE.config.pkg));
 
 /**
- * markup:build
+ * markup:revise
  * @see www.npmjs.org/package/useref-file
  */
-gulp.task("markup:build", ["style:compile"], function () {
+gulp.task("markup:revise", ["style:compile"], function () {
   var assets = $.useref.assets({
     searchPath: [
       CFG.DIR.src
