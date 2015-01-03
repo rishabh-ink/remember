@@ -20,7 +20,7 @@ This project depends on the following tools:
 * [Bower](http://bower.io)
 * [Gulp](http://gulpjs.com)
 
-:tophat: **Protip** Use [nvm](https://github.com/creationix/nvm) and [rvm](http://rvm.io) for easy management of NodeJS and Ruby installations.
+:tophat: **Tip** Use [nvm](https://github.com/creationix/nvm) and [rvm](http://rvm.io) for easy management of NodeJS and Ruby installations.
 
 ```
 git clone git@github.com:rishabhsrao/remember.git
@@ -31,7 +31,7 @@ bundle install
 ./node_modules/.bin/gulp serve && say awesome # Only on Mac OSX; use espeak on GNU/Linux. Windows users, sorry, no awesomeness for you!
 ```
 
-:fire: **Firewall issues** Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
+:tophat: **Tip** Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
 
 ```
 git config url.https://.insteadOf git://
@@ -46,7 +46,7 @@ The following build tasks are available:
 * **style:lint** Lints the Sass files using [SCSS-Lint](https://github.com/causes/scss-lint).
 * **style:compile** Compiles the Sass files using [Compass](http://compass-style.org).
 * **script:lint** Lints the JavaScript files [JSHint](https://github.com/jshint/jshint).
-* **script:test** Runs the JavaScript unit tests using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
+* **script:test** Runs the JavaScript unit tests and generates a code coverage report using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
 * **script:minify** Minifies the JavaScript files using [UglifyJS](http://github.com/mishoo/UglifyJS).
 * **image:minify** Compresses the image files using [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).
 * **markup:build** Optimizes JavaScript and CSS references in the HTML using [Useref](www.npmjs.org/package/useref-file).
@@ -54,7 +54,18 @@ The following build tasks are available:
 * **serve** Starts a web server with live-reload support using [BrowserSync](http://www.browsersync.io).
 * **build** Creates a build artifact, ready for deployment.
 * **source** Includes the source files in the build artifact.
-* **clean** Cleans all the build artifacts.
+* **clean** Cleans the build artifact and any other generated artifacts.
+
+:tophat: **Tip** It's a good idea to occasionally run:
+
+```
+git gc
+npm prune && npm install
+bower prune && bower install
+bundle clean --force && bundle install
+```
+
+... to keep your repository lean and mean.
 
 
 ## :deciduous_tree: Contribute
@@ -66,6 +77,8 @@ Your pull-requests and [suggestions](https://github.com/rishabhsrao/remember/iss
 3. Commit your changes: `git commit -m "Add awesome feature"`
 4. Push to the branch: `git push origin my-awesome-feature`
 5. Submit a pull request
+
+:tophat: **Tip** Use `git pull --rebase` while pull the code to avoid the [merge commit](http://kernowsoul.com/blog/2012/06/20/4-ways-to-avoid-merge-commits-in-git).
 
 
 ## :rocket: Deploy
