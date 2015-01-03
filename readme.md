@@ -46,7 +46,7 @@ The following build tasks are available:
 * **clean** Deletes everything in the `dist` directory.
 * **style:compile** Compiles the Sass files.
 * **script:lint** Lints the JavaScript files. Uses `.jshintrc` for configuration.
-* **script:test** (depends on **script:lint**): Runs the unit tests.
+* **script:test** Runs the unit tests.
 * **script:test:report:coveralls** Sends test coverage data to *Coveralls.io*. Uses [Istanbul](http://gotwarlost.github.io/istanbul).
 * **script:minify** Minifies the JavaScript files.
 * **serve** Runs a BrowerSync session for live-reload-enabled development.
