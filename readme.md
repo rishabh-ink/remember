@@ -95,7 +95,7 @@ heroku ps:scale web=1
 heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs
 ```
 
-:tophat: **Tip** The non-minified version of this project is also deployed at [/app](http://remember-rishabhsrao.herokuapp.com/app).
+:tophat: **Tip** The non-minified version of this project is also deployed to [Heroku at /app](http://remember-rishabhsrao.herokuapp.com/app).
 
 
 ## :scroll: License
