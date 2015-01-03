@@ -16,8 +16,10 @@
   "dependencies": {
     "amplify": "https://github.com/appendto/amplify.git#1.1.2",
     "bragi": "https://github.com/enoex/Bragi-Browser.git#0.0.7",
+    "breakpoint": "https://github.com/at-import/breakpoint.git#2.5.0",
     "core-menu": "Polymer/core-menu#0.5.2",
     "core-scaffold": "Polymer/core-scaffold#0.5.2",
+    "core-scroll-header-panel": "Polymer/core-scroll-header-panel#0.5.2",
     "jquery": "https://github.com/jquery/jquery.git#1.10.2",
     "moment": "https://github.com/moment/moment.git#2.8.3",
     "moment-precise-range": "https://github.com/AndrewEastwood/moment-precise-range.git#984e5e753762cbd8aba6bf4ba75bd43d79c02057",
