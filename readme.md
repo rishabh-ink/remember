@@ -1,4 +1,4 @@
-# Remember
+# Remember [:dizzy:](http://remember-rishabhsrao.herokuapp.com)
 
 > An app to help you remember the stuff you did.
 
@@ -9,6 +9,7 @@
 [![Coveralls](https://img.shields.io/coveralls/rishabhsrao/remember.svg?style=flat-square "Test coverage status")](https://coveralls.io/r/rishabhsrao/remember)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square "MIT license &copy; Rishabh Rao")](license.md)
 
+---
 
 ## :rowboat: Get started
 
@@ -17,8 +18,6 @@ This project depends on the following tools:
 * [Node.js](http://nodejs.org)
 * [Ruby](https://www.ruby-lang.org)
 * [Bundler](http://bundler.io) gem
-* [Bower](http://bower.io)
-* [Gulp](http://gulpjs.com)
 
 :tophat: **Tip** Use [nvm](https://github.com/creationix/nvm) and [rvm](http://rvm.io) for easy management of NodeJS and Ruby installations.
 
@@ -31,6 +30,8 @@ bundle install
 ./node_modules/.bin/gulp serve && say awesome # Only on Mac OSX; use espeak on GNU/Linux. Windows users, sorry, no awesomeness for you!
 ```
 
+:tophat: **Tip** If you have global installations of `bower` and `gulp`, then you can avoid typing the `./node_modules/.bin/` bit.
+
 :tophat: **Tip** Downloading dependencies over `git://` may be blocked if you are behind a firewall. The solution is to configure Git to use `https://` instead of `git://`. Run the following to force Git to use HTTPS:
 
 ```
@@ -41,7 +42,7 @@ git config url.https://.insteadOf git://
 
 ## :nut_and_bolt: Build
 
-The following build tasks are available:
+This project is built using [Gulp](http://gulpjs.com). The following build tasks are available:
 
 * **style:lint** Lints the Sass files using [SCSS-Lint](https://github.com/causes/scss-lint).
 * **style:compile** Compiles the Sass files using [Compass](http://compass-style.org).
@@ -55,6 +56,8 @@ The following build tasks are available:
 * **build** Creates a build artifact, ready for deployment.
 * **source** Includes the source files in the build artifact.
 * **clean** Cleans the build artifact and any other generated artifacts.
+
+You can run a task using `./node_modules/.bin/gulp {{task-name}}`.
 
 :tophat: **Tip** It's a good idea to occasionally run:
 
