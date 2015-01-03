@@ -1,4 +1,4 @@
-# Remember [:dizzy:](http://remember-rishabhsrao.herokuapp.com/dist)
+# Remember [:star:](http://remember-rishabhsrao.herokuapp.com/dist)
 
 > An app to help you remember the stuff you did.
 
