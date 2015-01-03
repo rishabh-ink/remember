@@ -7,10 +7,9 @@ cache:
   directories:
   - node_modules
   - bower_components
+  - $HOME/.rvm/gems
 before_script:
   - bundle install
-  - bundle show compass
-  - echo $BUNDLE_PATH
   - ./node_modules/.bin/bower install
 script:
   - ./node_modules/.bin/gulp build
