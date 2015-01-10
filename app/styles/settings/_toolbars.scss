@@ -1,0 +1,2 @@
+$toolbar__background-color: map-get(map-get($colors__material, $colors__palette--primary), "500");
+$toolbar__color: contrast-color($toolbar__background-color);

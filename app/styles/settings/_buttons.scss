@@ -1,3 +1,7 @@
+$button__background-color: map-get(map-get($colors__material, $colors__palette--secondary), "500");
+$button__color: contrast-color($button__background-color);
+
+
 $buttons__margin--right--snuggle: 16px !default;
 $buttons__margin--bottom--snuggle: 16px !default;
 

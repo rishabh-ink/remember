@@ -1,5 +1,7 @@
 .button--primary {
+  background-color: $button__background-color;
   bottom: $buttons__margin--bottom--snuggle;
+  color: $button__color;
   position: fixed;
   right: $buttons__margin--right--snuggle;
 

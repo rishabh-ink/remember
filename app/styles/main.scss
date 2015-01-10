@@ -1,5 +1,6 @@
 @import "CSS:normalize-css/normalize";
 
 @import "vendor/vendor";
-@import "config/config";
+@import "mixins/mixins";
+@import "settings/settings";
 @import "components/components";
