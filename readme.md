@@ -46,7 +46,7 @@ This project is built using [Gulp](http://gulpjs.com). The following build tasks
 
 * **style:lint** Lints the Sass files using [SCSS-Lint](https://github.com/causes/scss-lint).
 * **style:compile** Compiles the Sass files using [Compass](http://compass-style.org).
-* **script:lint** Lints the JavaScript files [JSHint](https://github.com/jshint/jshint).
+* **script:lint** Lints the JavaScript files using [JSHint](https://github.com/jshint/jshint).
 * **script:test** Runs the JavaScript unit tests and generates a code coverage report using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
 * **script:minify** Minifies the JavaScript files using [UglifyJS](http://github.com/mishoo/UglifyJS).
 * **image:minify** Compresses the image files using [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).
