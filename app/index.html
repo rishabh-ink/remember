@@ -30,6 +30,8 @@
 
   <link rel="import" href="../bower_components/font-roboto/roboto.html">
 
+  <link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
+  <link rel="import" href="../bower_components/app-router/app-router.html">
   <link rel="import" href="../bower_components/core-icons/core-icons.html">
   <link rel="import" href="../bower_components/core-icon-button/core-icon-button.html">
   <link rel="import" href="../bower_components/core-menu/core-menu.html">
@@ -54,7 +56,14 @@
       </core-toolbar>
 
       <div class="content">
-        <paper-fab class="button button--primary" icon="add"></paper-fab>
+        <app-router core-animated-pages transitions="cross-fade">
+          <app-route path="/notes" import="pages/notes-page.html"></app-route>
+          <app-route path="/create" import="pages/create-page.html"></app-route>
+        </app-router>
+
+        <a href="#/create" class="link--plain">
+          <paper-fab icon="add" class="button button--primary"></paper-fab>
+        </a>
       </div>
     </core-scroll-header-panel>
 
@@ -65,6 +74,9 @@
       <core-menu>
         <paper-item label="All notes">
           <core-icon icon="inbox"></core-icon> All notes
+        </paper-item>
+        <paper-item label="Settings">
+          <core-icon icon="settings"></core-icon> Settings
         </paper-item>
       </core-menu>
     </core-header-panel>
