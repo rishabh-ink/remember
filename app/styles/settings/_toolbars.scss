@@ -1,2 +1,5 @@
-$toolbar__background-color: map-get(map-get($colors__material, $colors__palette--primary), "500");
-$toolbar__color: contrast-color($toolbar__background-color);
+$toolbar--main__background-color: map-get(map-get($colors__material, $colors__palette--primary), "500");
+$toolbar--main__color: contrast-color($toolbar--main__background-color);
+
+$toolbar--drawer__background-color: map-get(map-get($colors__material, $colors__palette--secondary), "500");
+$toolbar--drawer__color: contrast-color($toolbar--drawer__background-color);

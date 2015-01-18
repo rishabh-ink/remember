@@ -1,4 +1,9 @@
-.toolbar {
-  background-color: $toolbar__background-color;
-  color: $toolbar__color;
+.toolbar--main {
+  background-color: $toolbar--main__background-color;
+  color: $toolbar--main__color;
+}
+
+.toolbar--drawer {
+  background-color: $toolbar--drawer__background-color;
+  color: $toolbar--drawer__color;
 }
