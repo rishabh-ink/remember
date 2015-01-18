@@ -32,7 +32,8 @@
     "requirejs-text": "https://github.com/requirejs/text.git#2.0.12",
     "rivets": "https://github.com/mikeric/rivets.git#0.7.1",
     "underscore": "https://github.com/components/underscore.git#1.7.0",
-    "underscore.string": "https://github.com/epeli/underscore.string.git#2.3.3"
+    "underscore.string": "https://github.com/epeli/underscore.string.git#2.3.3",
+    "paper-icon-button": "Polymer/paper-icon-button#0.5.2"
   },
   "devDependencies": {
     "Retina-Sprites-for-Compass": "https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass.git",
