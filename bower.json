@@ -24,7 +24,7 @@
     "moment": "https://github.com/moment/moment.git#2.8.3",
     "moment-precise-range": "https://github.com/AndrewEastwood/moment-precise-range.git#984e5e753762cbd8aba6bf4ba75bd43d79c02057",
     "moment-range": "https://github.com/gf3/moment-range.git#1.0.5",
-    "paper-button": "Polymer/paper-button#0.5.2",
+    "paper-button": "Polymer/paper-button#0.5.3-rc",
     "paper-fab": "Polymer/paper-fab#0.5.2",
     "paper-item": "Polymer/paper-item#0.5.2",
     "polymer": "Polymer/polymer#0.5.2",
