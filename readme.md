@@ -4,7 +4,7 @@
 
 [![Travis](https://img.shields.io/travis/rishabhsrao/remember.svg?style=flat-square "Build status")](https://travis-ci.org/rishabhsrao/remember)
 [![David](https://img.shields.io/david/rishabhsrao/remember.svg?style=flat-square "Dependency status (Node modules)")](https://david-dm.org/rishabhsrao/remember)
-[![Gemnasium](https://img.shields.io/gemnasium/mathiasbynens/he.svg?style=flat-square "Dependency status (Ruby gems)")](https://gemnasium.com/rishabhsrao/remember)
+[![Gemnasium](https://img.shields.io/gemnasium/rishabhsrao/remember.svg?style=flat-square "Dependency status (Ruby gems)")](https://gemnasium.com/rishabhsrao/remember)
 [![Code Climate](https://img.shields.io/codeclimate/github/rishabhsrao/remember.svg?style=flat-square "Code Climate status")](https://codeclimate.com/github/rishabhsrao/remember)
 [![Coveralls](https://img.shields.io/coveralls/rishabhsrao/remember.svg?style=flat-square "Test coverage status")](https://coveralls.io/r/rishabhsrao/remember)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square "MIT license &copy; Rishabh Rao")](license.md)
